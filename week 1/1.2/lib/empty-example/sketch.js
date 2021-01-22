@@ -1,12 +1,10 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(100, 100, WEBGL);
 }
 
 function draw() {
-  if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX, mouseY, 80, 80);
+  background(205, 102, 94);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  torus(30, 15);
 }
