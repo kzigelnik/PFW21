@@ -1,7 +1,7 @@
 // draw a spinning torus
 // with ring radius 30 and tube radius 15
 function setup() {
-  createCanvas(100, 100, WEBGL);
+  createCanvas(600, 600, WEBGL);
 }
 
 function draw() {
