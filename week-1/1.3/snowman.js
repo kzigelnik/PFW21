@@ -14,6 +14,7 @@ function draw() {
     fill(fill2);
     rect(0, 600, 1000, 200);
     //snowman legs
+    stroke('black');
     strokeWeight(3);
     // botton body
     fill("#f1f1f1");
@@ -40,6 +41,26 @@ function draw() {
     rect(450,300,100,10);
     // hat top
     fill(fill1)
-    rect(475,200, 50,100)
-
+    rect(475,200, 50,100);
+    //skiis
+    fill(fill1);
+    rect(350,200, 15,500);
+    rect(375,200, 15,500);
+    // snow
+    strokeWeight(10); 
+    stroke('white');
+    point(20, 20);
+    point(300,200);
+    point(100,300);
+    point(100,100);
+    point(250,600);
+    point(300,700);
+    point(500, 200);
+    point(450, 150);
+    point(600,600);
+    point(650,800);
+    point(700, 450);
+    point(800,200);
+    point(700, 100);
+    point(900,300);
 }
