@@ -8,18 +8,27 @@ function setup() {
 
 function draw() {
     background(grid);
+    // ground
+    fill("#84a98c");
+    rect(0, 600, 1000, 200);
     //snowman legs
-    fill("#f1f1f1");
-    strokeWeight(1);
-    stroke(100,250,100);
+    strokeWeight(3);
     // botton body
+    fill("#f1f1f1");
     ellipse(500, 600, 200, 200);
     // middle body
+    fill("#f1f1f1");
     ellipse(500, 460, 150, 150);
     // head
+    fill("#f1f1f1");
     ellipse(500, 350, 100);
     // left arm
-    line(350, 525, 450, 450)
+    line(350, 525, 450, 450);
     // right arm 
-    line(350, 525, 450, 450)
+    line(650, 525, 550, 450);
+    //smile
+    noFill();
+    arc(50, 55, 50, 50, 0, HALF_PI);
+    
+
 }
