@@ -5,11 +5,11 @@ let fill2 = prompt("enter another basic color name in lower case", "black",)
 function setup() {
     createCanvas(1000, 800);
     background ("#cad2c5");
-    
+    grid = loadImage("images/100px_grid.png");
 }
 
 function draw() {
-    background(grid);
+   // background(grid);
     // ground
     fill(fill2);
     rect(0, 600, 1000, 200);
