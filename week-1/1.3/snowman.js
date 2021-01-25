@@ -1,4 +1,6 @@
 let grid = undefined;
+let fill1 = prompt("enter a basic color name in lower case", "pink",)
+let fill2 = prompt("enter another basic color name in lower case", "black",)
 
 function setup() {
     createCanvas(1000, 800);
@@ -9,7 +11,7 @@ function setup() {
 function draw() {
     background(grid);
     // ground
-    fill("#84a98c");
+    fill(fill2);
     rect(0, 600, 1000, 200);
     //snowman legs
     strokeWeight(3);
@@ -30,9 +32,14 @@ function draw() {
     noFill();
     arc(500, 350, 50, 50, 0, HALF_PI);
     // left eye
-    ellipse(475,340,1,1)
+    ellipse(475,340,1,1);
     // right eye
-    ellipse(525,340,1,1)
-    
+    ellipse(525,340,1,1);
+    // hat brim
+    fill(fill1)
+    rect(450,300,100,10);
+    // hat top
+    fill(fill1)
+    rect(475,200, 50,100)
 
 }
