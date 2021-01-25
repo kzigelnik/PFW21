@@ -12,12 +12,10 @@ function draw() {
     fill("#f1f1f1");
     strokeWeight(0);
     stroke(100,250,100);
-    // left
-    ellipse(350,650, 200);
-    // right
-    ellipse(650, 650, 200);
-    // body
-    ellipse(500, 450, 350, 400);
+    // botton body
+    ellipse(500, 600, 200, 200);
+    // middle body
+    ellipse(500, 460, 150, 150);
     // head
-    ellipse(500, 200, 200)
+    ellipse(500, 350, 100)
 }
