@@ -28,7 +28,11 @@ function draw() {
     line(650, 525, 550, 450);
     //smile
     noFill();
-    arc(50, 55, 50, 50, 0, HALF_PI);
+    arc(500, 350, 50, 50, 0, HALF_PI);
+    // left eye
+    ellipse(475,340,1,1)
+    // right eye
+    ellipse(525,340,1,1)
     
 
 }
