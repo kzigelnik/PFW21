@@ -1,4 +1,4 @@
-const games = prompt ("pick a number between 1 and 3 to learn about a new game1");
+const games = prompt ("pick a number between 1 and 3 to learn about a new game!");
 
 const myGames = 
 [ {game: "Catan", type: "Board", numberOfPlayers: 4, rating: "4", description: "Settlers of Catan is a combination of strategy and resource management. You need the right materials to build houses and roads and gain victory points. The luck of the die throw drives these resources and determines how many settlements and roads you can build, which in turn accrue more resources."},
