@@ -16,7 +16,7 @@ function draw () {
     rectX += speed;
     if(rectX > width) {
         noLoop();
-        text('Your score was' + clickCount, 100, 300);
+        text('Your score was ' + clickCount, 100, 300);
     }
 }
 
