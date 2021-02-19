@@ -14,10 +14,9 @@ function draw () {
     squareArray[k].show();
   }
 }
-// classes are new blocks of code that contain everything it means to be that object: functionality, data, etc. The class is the cookie cutter.
+
 class Square {
   constructor (x, y, w, h) {
-    // 'this' keyword references the current object
     this.x = x;
     this.y = y;
     this.w = w;
@@ -25,7 +24,6 @@ class Square {
   }
 
   move () {
-    // the numbers in random are the speed at which the shape moves
     this.x = this.x + random(-2, 2);
     this.y = this.y + random(-2, 2);
   }
