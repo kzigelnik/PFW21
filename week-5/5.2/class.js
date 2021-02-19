@@ -16,11 +16,10 @@ function draw () {
 }
 
 class Square {
-  constructor (x, y, w, h) {
+  constructor (x, y, w) {
     this.x = x;
     this.y = y;
     this.w = w;
-    this.h = h;
   }
 
   move () {
@@ -32,6 +31,6 @@ class Square {
     stroke('yellow');
     strokeWeight(3);
     noFill();
-    rect(this.x, this.y, this.w, this.h);
+    square(this.x, this.y, this.w);
   }
 }
