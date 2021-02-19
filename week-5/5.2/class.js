@@ -3,7 +3,7 @@ let squareArray = [];
 function setup () {
   createCanvas(600, 400);
   for (let i = 0; i < 6; i++) {
-    const square = new Square(200, 200, 25, 25);
+    const square = new Square(200, 200, 25);
    squareArray.push(square);
   }
 }
