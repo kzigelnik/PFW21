@@ -30,7 +30,7 @@ class Square {
 
   show () {
     stroke('yellow');
-    strokeWeight(7);
+    strokeWeight(3);
     noFill();
     rect(this.x, this.y, this.w, this.h);
   }
