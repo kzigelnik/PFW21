@@ -10,13 +10,6 @@ let cardfaceArray = [];
 let cardback;
 function preload() {
   cardback = loadImage('images/icon_copy.png');
-  cardfaceArray = [
-    loadImage('images/bluberry.jpg'),
-    loadImage('images/lemons.jpg'),
-    loadImage('images/orange.jpg'),
-    loadImage('images/pineapple.jpg'),
-    loadImage('images/watermelon.jpg')
-  ]
 }
 function setup() {
   createCanvas(800, 800);
