@@ -45,11 +45,13 @@ new Vue({
   new Vue({
     el: "#llamaFactNine",
     data: { 
-      message: "In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm, water-repellent, and free of lanolin."}
+    message: "In the Andes Mountains of Peru, llama fleece has been shorn and used in textiles for about 6,000 years. Llama wool is light, warm, water-repellent, and free of lanolin."}
     });
   
   new Vue({
     el: "#llamaFactTen",
     data: { 
-      message: "Llamas are smart and easy to train."}
+      message: "Llamas are smart and easy to train.",
+      hiddenVue: true    
+    }
   });
