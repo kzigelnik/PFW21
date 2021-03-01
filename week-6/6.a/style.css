@@ -1,5 +1,14 @@
 body {
     background-color: yellow;
-    font-size: 60pt;
+    font-size: 20pt;
     color: pink;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+    background-image: url("llama-image.png");
+}
+
+h1 {
+    color: rgb(184, 184, 249);
+    font-size: 100;
+
 }
