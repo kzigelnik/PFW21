@@ -6,12 +6,14 @@ new Vue({
     message: 'Llamas are members of the camelid family meaning they are pretty closely related to vicuÃ±as and camels.' 
   }
 });
+
 new Vue({
   el: '#llamaFactTwo',
   data: {
     message: 'Camelids first appeared on the Central Plains of North America about 40 million years ago. About 3 million years ago, llamas ancestors migrated to South America.Here is the first paragraph of the Grame of Thrones script.' 
   }
 });
+
 new Vue({
   el: '#llamaFactThree',
   data: {
