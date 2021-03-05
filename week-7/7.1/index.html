@@ -14,7 +14,7 @@
 
 
     <div id="lva" v-cloak>
-    <h1> <a v-bind:style="style">Llamas and Alpacas!</a> </h1>
+    <h1> <a v-bind:class="{active: currentRoute==='llama'}" v-bind:style="style">Llamas and Alpacas!</a> </h1>
     <h2><a v-bind:href="alpacaLink">{{alpaca}}</a></h2>
     <h2><a v-bind:href="llamaLink">{{llama}}</a></h2>
 </div>
