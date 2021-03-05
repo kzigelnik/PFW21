@@ -1,7 +1,6 @@
 body {
     background-color: yellow;
-    font-size: 20pt;
-    color: pink;
+    font-size: 5pt;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: black;
     background-image: url("llama-image.png");
@@ -11,4 +10,12 @@ h1 {
     color: rgb(184, 184, 249);
     font-size: 100;
 
+}
+
+.alpaca {
+    color: purple
+}
+
+.llama {
+    color: rgb(184, 184, 249);
 }
