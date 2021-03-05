@@ -7,16 +7,15 @@
   <title>Llamas v. Alpacas</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <h1>Comparing Llamas and Alpacas!</h1>
+ <div id="lva" v-cloak>
 
-<div id="Facts" v-cloak>
+    <h1 v-bind:style="style">Llamas and Alpacas!</h1>
+
     <h2><a v-bind:href="alpacaLink">{{alpaca}}</a></h2>
     <h2><a v-bind:href="llamaLink">{{llama}}</a></h2>
 </div>
