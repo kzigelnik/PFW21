@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Produce I'm Growing This Year</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<h1>Produce I'm Growing This Year</h1>
+<div id="myCollectionApp">
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Image</th>
+            <th>Sun Requirement</th>
+            <th>Previously Grown</th>
+        </thead>
+        <tbody>
+            <tr 
+            v-for="(box, idx) in consoles"
+            v-bind:class="{odd: idx % 2 !== 0, 
+            second: box.sunRequirement === 'Full Sun'}">
+                <td>{{box.name}}</td>
+                <td>{{box.type}}</td>
+                <td><img v-bind:src="box.image" v-bind:alt="box.name + ' '+ box.type"/></td>
+                <td>{{box.sunRequirement}}</td>
+                <td>{{box.previouslyGrown}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+<script src="scripts/collections.js"></script>
+</body>
+
+</html> 
