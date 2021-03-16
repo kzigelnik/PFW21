@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Produce I'm Growing This Year</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
@@ -21,6 +20,7 @@
             <th>Image</th>
             <th>Sun Requirement</th>
             <th>Previously Grown</th>
+            <th>Actions</th>
         </thead>
         <tbody>
             <tr 
@@ -32,12 +32,40 @@
                 <td><img v-bind:src="box.image" v-bind:alt="box.name + ' '+ box.type"/></td>
                 <td>{{box.sunRequirement}}</td>
                 <td>{{box.previouslyGrown}}</td>
+                <td > <button > Delete </button> </td>
             </tr>
         </tbody>
     </table>
-    
+    <form v-on:submit.prevent="submitHandler">
+        <fieldset>
+            <legend>Add a console to the collection
+            </legend>
+            <div>
+                <label for="name">Name</label>
+                    <input id="name" type="text" v-model="newConsoleObj.name">
+            </div>
+<div>
+    <label for="type">Type</label>
+    <input id="type" type="text" v-model="newConsoleObj.type">
 </div>
-<script src="scripts/collections.js"></script>
+<div>
+    <label for="image">Image</label>
+    <input id="image" type="text" v-model="newConsoleObj.image">
+</div>
+<div>
+    <label for="sunRequirement">Sun Requirement</label>
+    <input id="sunRequirement" type="text" v-model="newConsoleObj.sunRequirement">
+</div>
+<div>
+    <label for="previouslyGrown">Previously Grown</label>
+    <input id="previouslyGrown" type="text" v-model="newConsoleObj.previouslyGrown">
+</div>
+<button type="submit">Submit</button>
+</fieldset>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="collections.js"></script>
 </body>
 
 </html> 
